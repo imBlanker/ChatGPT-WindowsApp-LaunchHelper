@@ -1,0 +1,8 @@
+{
+  "App": "auto",
+  "ExePath": "",
+  "ProxyMode": "system",
+  "ProxyUrl": "",
+  "TimeoutSeconds": 180,
+  "Language": "auto"
+}

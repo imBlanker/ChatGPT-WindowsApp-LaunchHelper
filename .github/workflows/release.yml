@@ -1,0 +1,43 @@
+name: Draft release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+  pull-requests: read
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify version, run tests and package
+        shell: powershell
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          $version = (Get-Content VERSION -Raw).Trim()
+          if ($env:RELEASE_TAG -ne ('v' + $version)) { throw 'Tag and VERSION do not match' }
+          ./scripts/Verify-Release.ps1 -Tag $env:RELEASE_TAG -RequireMergedPr
+          ./build.ps1
+      - name: Create draft with reviewed attachments
+        shell: powershell
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          $version = (Get-Content VERSION -Raw).Trim()
+          $assets = @(
+            "dist/ChatGPT-WindowsApp-LaunchHelper-$version-windows.zip",
+            "dist/ChatGPT-WindowsApp-LaunchHelper-$version-source.zip",
+            'dist/SHA256SUMS.txt', 'dist/release-inventory.json', 'dist/RELEASE-NOTES.md'
+          )
+          $arguments = @('release', 'create', $env:RELEASE_TAG) + $assets + @('--verify-tag', '--draft', '--title', $env:RELEASE_TAG, '--notes-file', 'dist/RELEASE-NOTES.md')
+          if ($version.Contains('-')) { $arguments += '--prerelease' }
+          gh @arguments
+          if ($LASTEXITCODE -ne 0) { throw 'Draft release creation failed' }
