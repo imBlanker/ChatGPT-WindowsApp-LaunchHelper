@@ -1,0 +1,130 @@
+ChatGPT Windows App Launch Helper
+Noncommercial Attribution Source License, version 1.0
+
+SPDX-License-Identifier: LicenseRef-ChatGPT-WALH-NC-1.0
+Copyright (c) 2026 imBlanker
+Project: https://github.com/imBlanker/ChatGPT-WindowsApp-LaunchHelper
+
+This is a project-specific source-available license. It is not an
+OSI-approved open-source license, MIT, GPL, or a Creative Commons license.
+
+1. Definitions and scope
+
+"Licensor" means imBlanker, the project maintainer, to the extent of the
+copyright and other rights that the Licensor is entitled to license.
+"Covered Material" means this project's code, scripts, documentation, and
+other material expressly distributed under this license, including
+copyright-protected portions that remain identifiable in adaptations.
+"You" means the individual or entity exercising the permissions below.
+"OpenAI" means the organization operating the ChatGPT product, including
+its relevant legal entities and successors.
+"Commercial Use" means use primarily intended for, or directed toward,
+commercial advantage or monetary compensation, including incorporation
+into a commercial product or service, sale of the Covered Material or an
+adaptation, and paid redistribution of it. Personal, noncommercial use of
+this helper does not become Commercial Use solely because You pay for a
+third-party ChatGPT subscription, network service, or Windows license.
+
+Unprotected names, ideas, methods, algorithms, and independently created
+implementations are not brought under this license merely by resembling the
+project. This license governs only rights for which a license is legally
+required. Statutory exceptions and limitations, including fair use or fair
+dealing where applicable, remain unaffected. Acknowledging inspiration is
+encouraged where no copyright permission is required, but this license
+does not claim exclusive ownership of unprotected ideas or methods.
+
+2. Noncommercial permission
+
+Subject to Sections 3 and 4, the Licensor grants You a worldwide,
+royalty-free, non-exclusive permission to use, study, reproduce, modify,
+adapt, and redistribute the Covered Material for noncommercial purposes.
+You may make noncommercial forks and reuse protected portions in your own
+noncommercial work. No permission for Commercial Use is granted by this
+license. Obtain a separate written authorization from the Licensor before
+Commercial Use. Making the source publicly accessible, accepting a pull
+request, or publishing a release does not supply that authorization.
+
+3. Attribution and redistribution conditions
+
+When sharing, distributing, publishing, or incorporating Covered Material
+in an adaptation, You must:
+
+(a) retain the copyright notices and a complete copy of this license;
+(b) identify the original project as "ChatGPT Windows App Launch Helper",
+    identify its author as "imBlanker", and provide the project URL above
+    in a reasonably accessible README, documentation, source notice, or
+    other customary attribution location;
+(c) clearly indicate material changes and distinguish your adaptation
+    from the original project; and
+(d) preserve the noncommercial restriction and the Section 4 reservation
+    for the Covered Material, and not purport to grant broader rights to
+    that material than You received.
+
+These requirements apply to identifiable copyright-protected material
+that You copy or adapt, including such material reused in a larger work.
+They do not require unrelated, independently authored additions to be
+licensed under this license. Such additions may use separate terms, but
+those terms cannot remove the conditions on the Covered Material itself.
+No trademark right, endorsement, or permission to impersonate the
+Licensor or OpenAI is granted. Accurate attribution is permitted.
+
+4. Reserved permission for integration by OpenAI
+
+Notwithstanding the general noncommercial permission, OpenAI, entities
+that control, are controlled by, or are under common control with OpenAI,
+and persons or entities acting on their behalf for the integration must
+contact imBlanker and obtain prior, explicit written authorization before
+incorporating, embedding, bundling, porting, or adapting Covered Material
+into the ChatGPT Windows desktop application or its product features.
+This reservation applies to both commercial and noncommercial product
+integration, including internal integration prototypes involving Covered
+Material. It is not waived by making the product or prototype available
+without charge.
+
+Employees' personal use of this helper as a separate, noncommercial
+external launcher is subject to Section 2 and does not alone constitute
+product integration. This reservation does not restrict independent
+implementations that use no Covered Material or acts that do not require
+the Licensor's permission under applicable law.
+
+A request, silence, access to the repository, a fork, a citation, or an
+automated response is not consent. Authorization must expressly identify
+the approved use and come from imBlanker or an expressly authorized
+representative. Authorization covers only rights the authorizing party
+can grant; third-party rights may require separate permission.
+
+5. Contact and separate permission
+
+Contact imBlanker by opening an authorization request at:
+https://github.com/imBlanker/ChatGPT-WindowsApp-LaunchHelper/issues/new
+or through an authenticated contact channel provided by imBlanker.
+State the intended use, integration scope, distribution, and whether it
+is commercial. Do not include passwords, access tokens, or private data
+in a public issue. A separate written agreement may permit uses excluded
+by this license.
+
+6. Breach and termination
+
+The permissions granted to You terminate when You materially breach this
+license. You must stop acts that require those permissions. Reinstatement
+requires the Licensor's written agreement. Termination does not remove
+rights that applicable law grants independently of this license.
+
+7. Warranty and liability
+
+To the extent permitted by applicable law, the Covered Material is
+provided as-is, without warranties of merchantability, fitness for a
+particular purpose, noninfringement, availability, or permanent account
+access. To that same extent, the Licensor is not liable for damages or
+losses arising from use of the Covered Material. Mandatory rights and
+liabilities that cannot lawfully be excluded remain unaffected.
+
+8. Versions and interpretation
+
+This English text is the controlling license. Translated README summaries
+are explanatory and do not replace it. The license version is 1.0 and is
+independent of the software's semantic version. A later license applies
+only to copies expressly released under that later license. This license
+does not retroactively revoke rights already granted for other copies or
+versions under another license. No additional copyright, patent, trademark,
+or other right is granted by implication.
