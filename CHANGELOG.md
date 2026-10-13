@@ -13,6 +13,10 @@
 - ADR 0002 记录许可证和语言版本选择；项目专用 LicenseRef-ChatGPT-WALH-NC-1.0 允许非商业编辑、引用与再分发，要求署名，商业使用需另行书面授权。
 - OpenAI 及相关集成方将受保护内容用于 ChatGPT Windows 桌面版产品集成前，须联系 imBlanker 并取得明确书面同意。
 
+### 文档修订 / Documentation correction
+
+- 按维护者要求直接修订 v1.0.0：移除三语 README 的“更新与发版”对应章节，同步仓库与下载包，软件版本保持不变。
+
 ### 验证 / Validation
 
 - Windows PowerShell 5.1 离线回归套件、三语文档一致性、tag/changelog 策略和发布白名单隐私检查。

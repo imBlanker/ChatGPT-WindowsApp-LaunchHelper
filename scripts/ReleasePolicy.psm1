@@ -20,7 +20,7 @@ function Assert-ReadmeParity {
         $commands = (@([regex]::Matches($text, '(?s)```powershell\n(.*?)```') | ForEach-Object { $_.Groups[1].Value.Trim() })) -join "`n---`n"
         $links = (@([regex]::Matches($text, '\]\(([^)]+)\)') | ForEach-Object { $_.Groups[1].Value } | Sort-Object)) -join "`n"
         $headings = [regex]::Matches($text, '(?m)^## ').Count
-        foreach ($term in @('LicenseRef-ChatGPT-WALH-NC-1.0', 'imBlanker', 'OpenAI', 'ARM64', 'SemVer', 'PAC/WPAD', '180')) {
+        foreach ($term in @('LicenseRef-ChatGPT-WALH-NC-1.0', 'imBlanker', 'OpenAI', 'ARM64', 'PAC/WPAD', '180')) {
             if (-not $text.Contains($term)) { throw ('Missing shared documentation fact in ' + $name) }
         }
         if ($name -eq 'README.md') { $referenceCommands = $commands; $referenceLinks = $links; $referenceHeadings = $headings; $referenceMarker = $marker }

@@ -66,12 +66,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-ChatGPT.ps1 -ExePath
 
 The helper improves startup timing and proxy consistency; it does not promise perpetual login. Server outages, account expiry, organization policy, certificate restrictions and proxy failures still need handling. If ChatGPT is already running in the background, a new launcher cannot change that process's proxy; **quit the application** through its menu and retry, without choosing Sign out.
 
-## Updates and releases
-
-Follow [ADR 0001](docs/adr/0001-branch-pr-tag-release.md): new branch and PR → checks and merge → annotated tag containing this version's changelog → Release containing the same changelog. Only allowlisted assets built from the commit associated with a merged PR are published.
-
-Software uses SemVer, starting publicly at `1.0.0`; beta/rc versions are marked prerelease, stable versions are not. Language versions translate one document; the license terms have a separate version `1.0`. See [RELEASING.md](RELEASING.md) and [ADR 0002](docs/adr/0002-noncommercial-license-and-language-versions.md).
-
 ## License and permission
 
 The complete English [LICENSE](LICENSE) controls, identified as `LicenseRef-ChatGPT-WALH-NC-1.0`:

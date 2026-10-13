@@ -66,12 +66,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-ChatGPT.ps1 -ExePath
 
 工具改善启动连接时序与代理一致性，不承诺登录永不过期；服务器故障、账户到期、组织策略、证书限制和代理故障仍需处理。若 ChatGPT 已在后台运行，新启动器无法改写既有进程的代理；请从应用菜单**退出应用**后重试，不必点击“退出登录”。
 
-## 更新与发版
-
-遵循 [ADR 0001](docs/adr/0001-branch-pr-tag-release.md)：新分支及 PR → 检查和合并 → 含本版 changelog 的带注释 tag → 含同一 changelog 的 Release。只发布从已合并 PR 对应提交构建的白名单附件。
-
-软件使用 SemVer，公开首版为 `1.0.0`；beta/rc 版本标记 prerelease，正式版本不带该标记。语言版本是同一文档的翻译；许可证条款版本单独为 `1.0`。详情见 [RELEASING.md](RELEASING.md) 和 [ADR 0002](docs/adr/0002-noncommercial-license-and-language-versions.md)。
-
 ## 许可证与授权
 
 以英文 [LICENSE](LICENSE) 完整文本为准，标识为 `LicenseRef-ChatGPT-WALH-NC-1.0`：

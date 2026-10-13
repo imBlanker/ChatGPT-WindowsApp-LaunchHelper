@@ -7,6 +7,8 @@ permissions:
   pull-requests: read
 jobs:
   release:
+    # Existing-version documentation corrections must not recreate a release.
+    if: github.event.created == true
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v7
