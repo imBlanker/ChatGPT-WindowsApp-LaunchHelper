@@ -85,11 +85,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-ChatGPT.ps1 -ExePath
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
+建置執行離線迴歸測試、三語文件／發布說明檢查和隱私白名單檢查；`dist` 產生 Windows 腳本包、乾淨原始碼包、SHA-256 校驗和發布清單。不含桌面版本體；只有通用 Windows 腳本包，不宣稱提供未經實測的不同架構程式。
+
+參考：[官方 Windows 部署](https://learn.chatgpt.com/docs/enterprise/windows-deployment)、[Electron 代理參數](https://www.electronjs.org/docs/latest/api/command-line-switches)。
+
 ---
 
 ## LINUX DO 社區
 
 感謝 [Linux.do](https://linux.do/) 社區的支持！
-建置執行離線迴歸測試、三語文件／發布說明檢查和隱私白名單檢查；`dist` 產生 Windows 腳本包、乾淨原始碼包、SHA-256 校驗和發布清單。不含桌面版本體；只有通用 Windows 腳本包，不宣稱提供未經實測的不同架構程式。
 
-參考：[官方 Windows 部署](https://learn.chatgpt.com/docs/enterprise/windows-deployment)、[Electron 代理參數](https://www.electronjs.org/docs/latest/api/command-line-switches)。
