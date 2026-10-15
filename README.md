@@ -88,3 +88,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 构建运行离线回归测试、三语文档/发布说明检查和隐私白名单检查；`dist` 生成 Windows 脚本包、干净源码包、SHA-256 校验和发布清单。不含桌面版本体；只有通用 Windows 脚本包，不声称提供未经实测的不同架构程序。
 
 参考：[官方 Windows 部署](https://learn.chatgpt.com/docs/enterprise/windows-deployment)、[Electron 代理参数](https://www.electronjs.org/docs/latest/api/command-line-switches)。
+
+---
+
+## 感谢 LINUX DO 社区
+
+感谢 [Linux.do](https://linux.do/) 社区的支持！
