@@ -88,3 +88,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 The build runs offline regression tests, three-language documentation/release-note checks and privacy allowlist checks. `dist` contains a Windows script archive, clean source archive, SHA-256 checksums and release inventory. No desktop app is included; only one general Windows script package is provided, without claiming separately tested architecture-specific programs.
 
 References: [official Windows deployment](https://learn.chatgpt.com/docs/enterprise/windows-deployment), [Electron proxy switches](https://www.electronjs.org/docs/latest/api/command-line-switches).
+
+---
+
+## LINUX DO Community
+
+Thanks to the [Linux.do](https://linux.do/) community for its support and contributions!
